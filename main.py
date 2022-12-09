@@ -56,12 +56,12 @@ while game_on:
     # Detect when paddle R misses
     if ball.xcor() > 380:
         ball.refresh()
-        scoreboard.point_R()
+        scoreboard.point_L()
 
     # Detect when paddle L misses
     if ball.xcor() < -380:
         ball.refresh()
-        scoreboard.point_L()
+        scoreboard.point_R()
 
 
 screen.exitonclick()
